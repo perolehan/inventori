@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Pengurusan Inventori</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+        /* Reset styling untuk margin dan padding */
         body, html {
             margin: 0;
             padding: 0;
@@ -11,10 +14,29 @@
             height: 100%;
             overflow: hidden;
         }
+
+        /* Gaya untuk iframe */
         iframe {
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        /* Media queries untuk memastikan responsif */
+        @media (max-width: 768px) {
+            body, html {
+                overflow-y: auto; /* Aktifkan scrolling jika perlu untuk skrin kecil */
+            }
+
+            iframe {
+                height: calc(100vh - 20px); /* Sesuaikan tinggi untuk skrin kecil */
+            }
+        }
+
+        @media (max-width: 480px) {
+            iframe {
+                height: calc(100vh - 40px); /* Tinggi lebih fleksibel untuk skrin telefon */
+            }
         }
     </style>
 </head>
