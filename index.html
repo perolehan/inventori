@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Pengurusan Inventori</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
@@ -11,44 +9,16 @@
             padding: 0;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
+            overflow: hidden;
         }
-
-        .container {
-            text-align: center;
-        }
-
-        button {
-            padding: 15px 30px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
+        iframe {
+            width: 100%;
+            height: 100%;
             border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Sistem Pengurusan Inventori</h1>
-        <p>Klik butang di bawah untuk mengakses sistem:</p>
-        <button onclick="openWebApp()">Buka Sistem Pengurusan Inventori</button>
-    </div>
-
-    <script>
-        function openWebApp() {
-            // Gantikan pautan di bawah dengan URL Google Apps Script anda
-            window.open("https://script.google.com/macros/s/AKfycbwNitwdZt0X4a_SzQ4BcRVZdzFwl2HZVjws4p29OodZH7VgtT8iplW-oAe-WZXk2fWz/exec", "_blank");
-        }
-    </script>
+    <iframe src="https://script.google.com/macros/s/AKfycbwNitwdZt0X4a_SzQ4BcRVZdzFwl2HZVjws4p29OodZH7VgtT8iplW-oAe-WZXk2fWz/exec"></iframe>
 </body>
 </html>
